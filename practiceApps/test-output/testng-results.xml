@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T21:41:20 IST" name="Default suite" finished-at="2025-06-18T21:41:58 IST" duration-ms="38264">
+  <suite started-at="2025-06-20T15:35:51 IST" name="Default suite" finished-at="2025-06-20T15:36:03 IST" duration-ms="12625">
     <groups>
     </groups>
-    <test started-at="2025-06-18T21:41:20 IST" name="Default test" finished-at="2025-06-18T21:41:58 IST" duration-ms="38264">
-      <class name="Practise.PractiseAmazon">
-        <test-method signature="testcase1()[pri:0, instance:Practise.PractiseAmazon@350aac89]" started-at="2025-06-18T21:41:20 IST" name="testcase1" finished-at="2025-06-18T21:41:58 IST" duration-ms="38009" status="PASS">
+    <test started-at="2025-06-20T15:35:51 IST" name="Default test" finished-at="2025-06-20T15:36:03 IST" duration-ms="12625">
+      <class name="Practise.Pagination">
+        <test-method signature="sample()[pri:0, instance:Practise.Pagination@350aac89]" started-at="2025-06-20T15:35:51 IST" name="sample" finished-at="2025-06-20T15:36:03 IST" duration-ms="12526" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase1 -->
-      </class> <!-- Practise.PractiseAmazon -->
+        </test-method> <!-- sample -->
+      </class> <!-- Practise.Pagination -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
