@@ -1,8 +1,11 @@
 package Practise;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.time.Duration;
 import java.util.List;
 
+import org.apache.http.HttpConnection;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -39,4 +42,29 @@ public class pagination2 {
 				}
 	}
 }
+	@Test
+	public void sample2() {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.get("https://testautomationpractice.blogspot.com/");
+		List<WebElement> allLinks = driver.findElements(By.tagName("src"));
+		for(WebElement link:allLinks ) {
+			String ln = link.getAttribute("img");
+			try {
+				URL url=new URL(ln);
+				HttpURLConnection httpconn=(HttpURLConnection) url.openConnection();
+				int statuscode = httpconn.getResponseCode();
+				if(statuscode>400) {
+					System.out.println(ln+"=======>"+statuscode);
+					
+				}
+			}
+			catch (Exception e) {
+				
+			}
+		}
+		driver.quit();
+		
+	}	
 }
